@@ -5,5 +5,8 @@ import tsconfigPaths from "vite-tsconfig-paths";
 
 export default defineConfig({
   plugins: [tailwindcss(), reactRouter(), tsconfigPaths()],
-  base: "/frist-web/"
+  base: "/frist-web/",
+  build: {
+    outDir: "build/client"
+  }
 });
